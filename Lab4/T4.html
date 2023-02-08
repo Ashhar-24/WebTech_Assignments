@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>T4</title>
+</head>
+    <body>
+        <div id="main">
+        <h1>Original Content</h1>
+        <p>This is the original content in the main section.</p>
+        <button onclick="changeThisPageFunc()">Click Here!</button>
+        <script>
+            changeThisPageFunc = function() {
+              main.innerHTML = "<h2>New Content</h2><p>This is the new content in the main section.</p>";
+              main.className = "new-style";
+            }
+          </script>
+    </div>
+    </body>
+</html>

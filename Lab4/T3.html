@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            .myclass{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hey, it's me Ashhar!</h1>
+        <button onclick="changePage();">Click Me!</button>
+        <script type="text/javascript">
+            changePage=function()
+            {   
+                alert("body has class =" +document.body.className);
+                document.body.className="myclass";
+                alert("body has class =" +document.body.className);
+                document.body.innerHTML= "<h2>I'm currently persuing my bachleors in Information Technology</h2>";
+            }
+
+        </script>
+    </body>
+</html>
