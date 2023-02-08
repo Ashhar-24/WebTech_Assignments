@@ -1,0 +1,28 @@
+h3{
+    display: inline-block;
+    padding-right: 20px;
+    margin: 0 auto 0 auto;
+    padding: 15px 10px 15px 10px;
+}
+h3:hover{
+    background-color: rgb(214, 116, 116);
+    color: white;
+    margin-top: 0;
+}
+nav{
+    background-color: lightblue;
+    width: 100%;
+    margin-bottom: 1px;
+    float: left;
+    position: fixed;
+}
+footer{
+    background-color: lightblue;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#hobby{
+    position: fixed;
+    bottom: 73%;
+}
