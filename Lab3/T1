@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            .even {
+            background-color: rgb(62, 173, 69);
+          }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="even">Eswatini</li>
+            <li>Ecuador</li>
+            <li class="even">Tanzania</li>
+            <li>Spain</li>
+            <li class="even">Slovakia</li>
+            <li>Iraq</li>
+          </ul>
+    </body>
+</html>
