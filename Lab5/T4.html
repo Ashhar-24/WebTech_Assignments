@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="addRow">Add Row</button>
+  <table id="fibonacciTable">
+    <tr>
+      <td>1</td>
+    </tr>
+  </table>
+
+  <script>
+    const button = document.querySelector("#addRow");
+    const table = document.querySelector("#fibonacciTable");
+    let prev = 0;
+    let curr = 1;
+
+    button.addEventListener("click", function() {
+      const next = prev + curr;
+      prev = curr;
+      curr = next;
+
+      const newRow = table.insertRow(-1);
+      const newCell = newRow.insertCell(0);
+      newCell.innerText = next;
+    });
+  </script>
+</body>
+</html>

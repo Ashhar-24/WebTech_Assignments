@@ -1,0 +1,27 @@
+<html>
+  <body>
+
+    <button onclick="makePage()">Click Here</button>
+    <script>
+        let counter = 1;
+      function makePage() {
+        // Create elements
+        const header = document.createElement("h1");
+        header.innerText = "I am an H1";
+        document.body.appendChild(header);
+        const subheader = document.createElement("h7");
+        document.body.appendChild(subheader);
+        subheader.innerText = "This is a paragraph followed by a list";
+        ol = document.createElement('ol');
+        ol.type="I";
+        li = document.createElement("li");
+        li1 = document.createElement("li");
+        li.innerText = "This is First";
+        li1.innerText = "This is Second";
+        ol.appendChild(li);
+        ol.appendChild(li1);
+        document.body.appendChild(ol);
+      }
+    </script>
+  </body>
+</html>

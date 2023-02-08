@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #count {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button">Increment</button>
+    <p id="count">0</p>
+    <script>
+      let count = 0;
+      const button = document.querySelector("#button");
+      const countEl = document.querySelector("#count");
+      button.addEventListener("click", function() {
+        count++;
+        countEl.innerHTML = count;
+        countEl.style.fontSize = `${16 + count * 2}px`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="button">Increment</button>
+    <ul id="list"></ul>
+    <script>
+      let count = 0;
+      const button = document.querySelector("#button");
+      const list = document.querySelector("#list");
+      button.addEventListener("click", function() {
+        count++;
+        const item = document.createElement("li");
+        item.innerHTML = count;
+        list.appendChild(item);
+      });
+    </script>
+  </body>
+</html>

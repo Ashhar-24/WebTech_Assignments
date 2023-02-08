@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function performCalculation() {
+        var input1 = document.querySelector("#input1").value;
+        var input2 = document.querySelector("#input2").value;
+        var value1 = Number.parseInt(input1);
+        var value2 = Number.parseInt(input2);
+        var operator = this.innerHTML;
+        var result;
+  
+        switch (operator) {
+          case "+":
+            result = value1 + value2;
+            break;
+          case "-":
+            result = value1 - value2;
+            break;
+          case "*":
+            result = value1 * value2;
+            break;
+          case "/":
+            result = value1 / value2;
+            break;
+        }
+  
+        document.querySelector("#result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <br>
+    <button onclick="performCalculation.call(this)">+</button>
+    <button onclick="performCalculation.call(this)">-</button>
+    <button onclick="performCalculation.call(this)">*</button>
+    <button onclick="performCalculation.call(this)">/</button>
+    <br>
+    <div id="result"></div>
+  </body>
+</html>
